@@ -50,10 +50,26 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Certifications</span><br>1. Using Python to Interact with the Operating System by Google<br>2. CS50: Introduction to Computer Science by Harvard<br>3. Legacy JavaScript Algorithms and Data Structures by freeCodeCamp</li>
-                        <li><span>Technical</span><br>JavaScript, SQL, C, HTML/CSS, Python,<br>Netbeans, Quartus II,NI MultiSim,<br>MATLAB, Github, Microsoft Office Suite</li>
-                        <li><span>Languages</span><br>English (Fluent), Hindi (Fluent), Urdu (Native),<br>Bengali (Elementary), Arabic (Intermediate)
-                        </li>
+
+                        <li><span>Certifications</span><br>
+                            1. Using Python to Interact with the Operating System by Google<br>
+                            2. CS50: Introduction to Computer Science by Harvard<br>
+                            3. Legacy JavaScript Algorithms and Data Structures by freeCodeCamp<br>
+                            4. Google – Using Python to Interact with the Operating System<br>
+                            5. Meta – Programming Fundamentals in Kotlin<br>
+                            6. Meta – Introduction to Android Mobile Application Development<br>
+                            7. Meta – Version control
+                            </li>
+                            <li><span>Technical</span><br>
+                            JavaScript, SQL, C, HTML/CSS, Python,<br>
+                            Netbeans, Quartus II, NI MultiSim,<br>
+                            MATLAB, Github, Microsoft Office Suite
+                            </li>
+                            <li><span>Languages</span><br>
+                            English (Fluent), Hindi (Fluent), Bhojpuri (Fluent),<br>
+                            Urdu (Native), Bengali (Elementary), Arabic (Intermediate)
+                            </li>
+    
                         <li><span>Qualitative</span><br>Collaboration, Communication, Leadership,<br>Time Management, Attention-to-Detail</li>
                     </ul>
                 </div>
@@ -61,7 +77,10 @@
                     <ul>
                         <li><span>Server at Scaddabush Italian Kitchen and Bar</span><br>Responsible for delivering exceptional customer service by taking orders and ensuring a memorable dining experience<br>Excel in working efficiently and calmly under pressure, providing attentive and prompt service</li>
                         <li><span>Cashier/Retail Sales Associate at Dollarama</span><br>Support day-to-day operations of the store through various tasks including organizing merchandise and oper- ating cash registers. Brilliant in a fast-paced retail environment<br>Able to work efficiently, effectively and focused on maintaining a clean and safe store to meet Dollarama’s standards of customer service</li>
-                    </ul>
+
+                        <li><span>Event Staff at Fever-Candlelight concert Canada</span><br>
+                            Assisted in the daily operations of the event by coordinating setup, overseeing event logistics, and collaborating effectively with team members to ensure smooth execution.</li>
+                            </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
@@ -111,8 +130,8 @@
     </div>
 </div>
 
- <!------------------------portfolio--------------------->
- <div id="portfolio">
+<!------------------------portfolio--------------------->
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1> <!-- Title for the section -->
         <div class="work-list">
@@ -149,7 +168,7 @@
 </div>
 <!-----------------------contact------------------------>
 <div id="contact">
-    <div class="container"> 
+    <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -171,14 +190,14 @@
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg">hello</span>
-            </div>    
+            </div>
         </div>
     </div>
     <div class="copyright">
         <p>Copyright © Huzaifa.<i class="fa-solid fa-heart"></i></p>
     </div>
 
-</div> 
+</div>
 
 <script>
 
@@ -215,7 +234,7 @@
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
